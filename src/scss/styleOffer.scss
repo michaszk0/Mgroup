@@ -1,0 +1,354 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+//animateCSS start
+
+.hide {
+  opacity: 0;
+}
+
+.show {
+  opacity: 1;
+}
+
+.wallpaper-start {
+  height: 100vh;
+}
+//animateCSS end
+.main {
+  // height: 100px;
+  position: fixed;
+  z-index: 10;
+  right: 10px;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.header-down {
+  position: relative;
+  position: fixed;
+  z-index: 100;
+  right: 0;
+  width: 100%;
+  background-color: white;
+  border-bottom: 1px solid #76c729;
+}
+
+.logo {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  a {
+    height: 80px;
+    }
+}
+
+.showLogo img{
+    height: 60px;
+}
+
+.mobile-menu {
+  nav {
+    // display: flex;
+    .mobile {
+      opacity: 1;
+      font-family: 'Montserrat', sans-serif;
+      letter-spacing: 0.1em;
+    }
+  }
+}
+
+.menu {
+  text-align: right;
+  float: right;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+nav {
+  width: 100%;
+
+  ul {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+
+    li {
+      list-style: none;
+      display: inline-block;
+      padding: 10px;
+
+      a {
+        text-decoration: none;
+        color: black;
+        display: block;
+        transition: color 0.5s ease;
+      }
+      a:hover{
+        text-decoration: none;
+        color: #76c729;
+      }
+    }
+  }
+}
+
+// ul li:hover {
+//  text-decoration: none;
+// }
+
+@media (max-width:996px) {
+  .logo {
+    opacity: 1;
+  }
+
+  .hamburger {
+    display: inline-block;
+  }
+
+  ul {
+    width: 80%;
+    text-align: center;
+  }
+
+  nav {
+    width: 100%;
+  }
+
+  nav ul li {
+    text-align: center;
+    display: block;
+    border-top: 1px solid lightgrey;
+
+    a {
+      display: block;
+    }
+  }
+
+  nav ul li:first-of-type {
+    border: none;
+  }
+
+  .mobile {
+    display: none;
+    position: absolute;
+    top: 66px;
+    left: 10px;
+    z-index: 10;
+    background-color: white;
+    border-top: 3px solid green;
+  }
+
+  .mobile-menu {
+    display: flex;
+    align-content: center;
+  }
+
+  .active {
+    display: block;
+    width: 100%;
+  }
+
+  .realization {
+    h1{
+      text-align: center;
+      margin: 60px;
+      font-family: 'Montserrat', sans-serif;
+    }
+    .row{
+      display:flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      flex-direction: column;
+      height: 1000px;
+      .col{
+        display:flex;
+        align-items: center;
+        width: 80%;
+        flex-direction: column;
+        margin: 20px;
+        img {
+          margin: 10px;
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+  .contact{
+    .container{
+      margin-left: 20px;
+    }
+  }
+}
+
+.wallpaper-start {
+  background-image: url("http://fresho.com.pl/wp-content/uploads/2017/08/www.jpg");
+  background-position: center;
+  background-size: cover;
+}
+//PARALAX START
+.parallax_section {
+  height: 600px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 100% auto;
+  position: relative;
+}
+
+.intro-offer {
+  height: 90px;
+  display: flex;
+  align-items: center;
+
+  .container {
+    display: flex;
+    justify-content: center;
+
+    .row {
+      img {
+        height: 150px;
+      }
+    }
+  }
+}
+
+.quotation {
+  background: url("http://fresho.com.pl/wp-content/uploads/2017/08/biznes.png");
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  min-height: 70vh;
+  color: white;
+  padding: 80px 0 40px 0;
+
+  h1 {
+    font-size: 43px;
+    font-weight: 300;
+  }
+  .quotation-description{
+    font-size: 17px;
+    font-weight: 300;
+    margin-top: 60px;
+  }
+}
+
+.img-fluid{
+  max-width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.offer-slider{
+  h1{
+    text-align:center;
+    margin: 60px;
+    font-family: 'Montserrat', sans-serif;
+  }
+}
+
+
+.realization {
+  padding-bottom: 60px;
+  h1{
+    text-align:center;
+    margin: 60px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .col{
+    // display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    margin: 20px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.owl-carousel{
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+//Zoom efekt z lupą START
+
+span.roll {
+	background:url(http://wpandsuch.com/posts/jquery-image-rollover/images/mag.png) center center no-repeat #000;
+  background-color: #7bc622;
+	height: 100%;
+	position: absolute;
+  cursor: pointer;
+	width: 100%;
+	z-index: 10;
+	-webkit-box-shadow: 0px 0px 4px #000;
+	-moz-box-shadow: 0px 0px 4px  #000;
+	box-shadow: 0px 0px 4px  #000;
+}
+
+//Zoom efekt z lupą END
+
+.contact{
+
+    background-color: #f7f7f7;
+    font-family: 'Quicksand', sans-serif;
+    letter-spacing: 0.1em;
+    .spacing{
+      margin: 26px 0 10px 0;
+    }
+    strong{
+      font-weight: 700;
+    }
+    h1{
+      text-align: center;
+      margin: 60px;
+      font-family: 'Montserrat', sans-serif;
+    }
+    p{
+      // font-size:12px;
+      margin-bottom: 0;
+    }
+
+
+  .map{
+    padding: 0;
+    height: 40vh;
+    margin-top: 50px;
+    div.login-control{
+      display: none;
+    }
+  }
+}
