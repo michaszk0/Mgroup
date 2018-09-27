@@ -101,6 +101,10 @@
   text-transform: uppercase;
 }
 
+.imgheight{
+  height:180px !important;
+}
+
 nav {
   width: 100%;
 }
