@@ -195,7 +195,7 @@ nav ul li a:hover {
 }
 
 .wallpaper-start {
-  background-image: url("http://fresho.com.pl/wp-content/uploads/2017/08/www.jpg");
+  background-image: url("../img/intro.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -225,7 +225,7 @@ nav ul li a:hover {
 }
 
 .quotation {
-  background: url("http://fresho.com.pl/wp-content/uploads/2017/08/biznes.png");
+  background-image: url("../img/about.jpg");
   background-position: center;
   background-size: cover;
   text-align: center;
