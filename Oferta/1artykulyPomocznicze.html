@@ -1,6 +1,18 @@
 <!DOCTYPE html>
 <html lang="pl">
+  <!--
+    Strony statyczne mają to do siebie, że często tekst i obrazki są zahardcodowane w taki sposób jak na
+    poniższych dwunastu HTML'ach. Ma to sens, w przypadku gdy danych jest stosunkowo mało i nie będą często zmieniane.
+    Wyobraź sobie, że firma nabiera wiatru w skrzydła i jej oferta staje się bogatsza o kolejne 20 ofert.
+    Wtedy będzie to ciężkie do utrzymania i rozwoju, co najgorsze zduplikujemy dużo kogdu, a w programowaniu staramy się tego uniknąć.
 
+    W przyszłości takie problemy proponuję rozwiązać za pomocą serwera aplikacyjnego. Wtedy wykorzystujesz jeden szablon do generowania wszystkich ofert,
+    a tekst i obrazki przechowujesz w bazie danych, lub jakiejkolwiek strukturze danych.
+
+    Innym rozwiązaniem jest generowanie części ofertowej za pomocą JavaScriptu:
+    Masz jednego HTML'a z kontenerem na oferty i wstrzykujesz do niego odpowiednie dane.
+    To rozwiązanie jest gorsze od powyższego ponieważ dane ofertowe nie będą indeksowane bo robota google.
+  -->
 <head>
   <meta charset="UTF-8">
   <title>MGroup/Offer</title>

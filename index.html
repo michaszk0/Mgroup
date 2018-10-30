@@ -8,6 +8,10 @@
   <!-- CSS -->
   <link href="./css/style.css" rel="stylesheet">
   <link rel="stylesheet" href="./css/animate.css" type="text/css">
+  <!--
+     Jest nieporządek w katalogach. Proponuję src/css/, src/js/, src/img/ - tak powinny wyglądać ścieżki do plików.
+     Biblioteka OwlCarousel2 powinna być w katalogu ./src/js, i proponuję unikać spacji w linkach
+   -->
   <link rel="stylesheet" href="OwlCarousel2-2.3.4 2/dist/assets/owl.carousel.css">
   <link rel="stylesheet" href="OwlCarousel2-2.3.4 2/dist/assets/owl.theme.default.min.css">
   <!-- <link rel="stylesheet" href="./owlcarousel/owl.theme.default.min.css"> -->
@@ -101,6 +105,11 @@
         <div class="owl-carousel owl-theme">
           <div class="item">
             <a href="Oferta/1artykulyPomocznicze.html">
+              <!--
+                Wykorzystywane obrazki są znacznie większe od tego co prezentujesz na stronie.
+                Polecam je zmniejszyć żeby nie zaciągać za każdym razem tyle niepotrzenych danych.
+                Wtedy strona będzie ładować się odrobinę szybciej, być może będzie do zauważalne na słabym łączu.
+              -->
               <img src="img/1-1.jpg" class="img-fluid imgheight" atl="1">
               <h6 class="h6Offer">Artykuły pomocnicze</h6>
             </a>
@@ -302,5 +311,7 @@
 
 
 </body>
-
+<!--
+Kod HTML czytelny i prosty, nie mam się do czego przyczepić :)
+-->
 </html>
